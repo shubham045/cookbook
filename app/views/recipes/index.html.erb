@@ -2,7 +2,7 @@
 
 <h1>Recipes</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Tittle</th>
@@ -16,9 +16,9 @@
       <tr>
         <td><%= recipe.tittle %></td>
         <td><%= recipe.instructions %></td>
-        <td><%= link_to 'Show', recipe %></td>
-        <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
-        <td><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', recipe, class: "btn btn-primary" %></td>
+        <td><%= link_to 'Edit', edit_recipe_path(recipe), class: "btn btn-success" %></td>
+        <td><%= link_to 'Destroy', recipe, class: "btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
